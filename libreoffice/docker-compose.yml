@@ -1,0 +1,13 @@
+services:
+  rimgo:
+    container_name: libreoffice
+    image: collabora/code:latest
+    restart: always
+    ports:
+      - "9980:9980"
+    environment:
+      - "domain=nextcloud\\.brennoflavio\\.com\\.br"
+    cap_add:
+      - MKNOD
+
+
